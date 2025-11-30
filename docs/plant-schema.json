@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Florica Plant Schema",
+  "description": "Basic structure for describing plant data used in Florica documentation.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Common plant name."
+    },
+    "latin_name": {
+      "type": "string",
+      "description": "Botanical Latin name."
+    },
+    "category": {
+      "type": "string",
+      "description": "Plant category (shrub, tree, perennial, indoor, etc.)."
+    },
+    "height_cm": {
+      "type": "number",
+      "description": "Approximate mature height in centimeters."
+    },
+    "width_cm": {
+      "type": "number",
+      "description": "Approximate mature width in centimeters."
+    },
+    "light": {
+      "type": "string",
+      "description": "Light requirement (full sun, partial shade, shade)."
+    },
+    "soil": {
+      "type": "string",
+      "description": "Preferred soil type."
+    },
+    "watering": {
+      "type": "string",
+      "description": "General watering guideline."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional optional notes."
+    }
+  },
+  "required": ["name", "latin_name", "category"]
+}
